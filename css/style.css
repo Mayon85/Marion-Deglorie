@@ -1,0 +1,361 @@
+/***** GENERAL *********/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    background-image: url(../images/pattern.png);
+    background-repeat: repeat-y;
+    background-size: contain;
+    width: 100%;
+    height: auto;
+    background-color: #F2EFE9;
+    scroll-behavior: smooth;
+    position: relative;
+}
+
+h1,h2,h3 {
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Poiret One' ;
+}
+
+h2 {
+    color:#d8bd84;
+    text-transform: uppercase;
+}
+
+p {
+    font-weight: 200;
+    font-size: 14px;
+}
+
+.divider {
+    width: 20%;
+    height: 2px;
+    background-color: #d8bd84;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.heading {
+    margin: 0 auto;
+}
+
+section {
+    padding-top: 220px;
+}
+
+
+/***** NABAR ************/
+
+.navbar {
+    background: #711532;
+    letter-spacing: 3px;
+    font-weight: 500;
+    text-transform: uppercase;
+    border-bottom: 1px solid rgba(242, 239, 233, 0.2);
+}
+
+.navbar-toggler-icon {
+    color: #F2EFE9;
+    font-size: 25px;
+}
+
+.navbar-nav {
+    margin: 0 auto;
+}
+
+.navbar-collapse a {
+    color: #F2EFE9;
+    margin: 0 5px 0 5px;
+    text-decoration: none;
+    text-align: center;
+
+}
+
+.navbar-collapse a:hover, .navbar-collapse a:active {
+    background: #F2EFE9;
+    color: #711532;
+    transition: 0.9s;
+}
+
+/***** HEADER *********/
+ header {
+     padding: 220px 0;
+     background-image: linear-gradient(180deg, #d8bd8461 0%, rgba(113,21,50,1) 86%), url(../images/essai3.jpg);
+     background-position: center left;
+     background-size: cover;
+     position: relative;
+ }
+
+ header .profile-picture {
+    text-align: center;
+    margin: 0 auto;
+    float: none;
+}
+
+ header h1, header h3 {
+     color: white;
+ }
+
+ header .img-profile {
+     position: absolute;
+     left: 50%;
+     transform: translateX(-50%);
+     padding-top: 60px;
+     z-index: 2;
+ }
+
+/***** ABOUT **********/
+
+#about {
+    text-align: center;
+}
+
+.reseaux {
+    font-size: 35px;
+    text-align: center;
+    background: -webkit-gradient(linear,left bottom,left top, from(#d8bd84), to(#711532));
+    background: linear-gradient(to top,#d8bd84,#711532);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/*** COMPETENCES *********/
+
+#skills {
+    background: rgb(242,239,233);
+    background: linear-gradient(180deg, rgba(242,239,233,0) 0%, rgba(249,248,245,0.8) 22%, rgba(255,255,255,0.75) 50%, rgba(247,245,241,0.8) 82%, rgba(242,239,233,0) 100%);  
+}
+
+.competence {
+    text-align: center;
+}
+
+#skills svg {
+    width: 80px;
+    height: auto;
+    margin: 20px;
+    animation: svg-color 2s ease infinite;
+}
+
+@keyframes {
+    from {}
+    to {}
+}
+
+#skills .progress {
+    height: 6%;
+    width: 100%;
+    margin: 30px 0;
+    background-color: white;
+}
+
+.progress-bar {
+    background-color: #711532;
+}
+
+    /*** ANIMATION DES PROGRESSBAR ****/
+
+    .adobe {
+        width: 90%;
+        animation: adobe 3s;
+    }
+
+    @keyframes adobe {
+        from {width: 0%;}
+        to {width:90%}
+    }
+
+    .hello {
+        width: 85%;
+        animation: hello 2s;
+    }
+
+    @keyframes hello {
+        from {width: 0%;}
+        to {width:85%}
+    }
+
+    .html5 {
+        width: 85%;
+        animation: html5 2s;
+    }
+
+    @keyframes html5 {
+        from {width: 0%;}
+        to {width:85%}
+    }
+
+    .css3 {
+        width: 80%;
+        animation: css3 2s;
+    }
+
+    @keyframes css3 {
+        from {width: 0%;}
+        to {width:80%}
+    }
+
+    .equipe {
+        width: 95%;
+        animation: equipe 3s;
+    }
+
+    @keyframes equipe {
+        from {width: 0%;}
+        to {width:95%}
+    }
+
+    .scrum {
+        width: 40%;
+        animation: scrum 1s;
+    }
+
+    @keyframes scrum {
+        from {width: 0%;}
+        to {width:40%}
+    }
+
+
+/**** PORTFOLIO *******/
+#portfolio .box {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+#portfolio img {
+    width: 100%;
+    height: 100%;
+}
+
+#portfolio img:hover {
+    transform: scale(1.3);
+    transition: 2s ease ;
+}
+
+
+/**** EXPERIENCES ******/
+
+.timeline {
+    padding: 30px 10px;
+    position: relative;
+}
+
+.timeline:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 5px;
+    background: white;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.timeline > li {
+    margin-bottom: 20px;
+    position: relative;
+    list-style: none;
+}
+
+.timeline > li:after {
+    clear: both;
+}
+
+.timeline > li:before, .timeline > li:after {
+    content: "";
+    display: table;
+}
+
+.timeline-badge {
+    color: #711532;
+    width: 50px;
+    line-height: 50px;
+    font-size: 20px;
+    text-align: center;
+    position: absolute;
+    top: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    border-radius: 50%;
+}
+
+.timeline-panel-container {
+    width: 50%;
+    float: left;
+    text-align: right;
+}
+
+.timeline-panel-container-inverted {
+    width: 50%;
+    float: right;
+}
+
+.timeline-panel {
+    width: 90%;
+    float: right;
+    margin-right: 40px;
+    padding: 20px 25px;
+    border-radius: 8px;
+    background: #F2EFE9;
+    box-shadow:  20px 20px 60px #cecbc6, 
+             -20px -20px 60px #ffffff;
+}
+
+.timeline-panel-container-inverted {
+    margin-left: 20px;
+}
+
+.timeline-heading, .timeline-heading h3 {
+    text-align: right;
+}
+
+.timeline-heading-inverted, .timeline-heading-inverted h3 {
+    text-align: left;
+}
+
+.text-mute {
+    color: rgb(108, 108, 108);
+    font-weight: 200;
+    font-size: 14px;
+}
+
+#experience h4 {
+    font-weight: 300;
+    font-size: 16px;
+    color: rgb(32, 32, 32);
+}
+
+ .timeline-body p {
+     font-size: 12px;
+     margin-bottom: 5px;
+ }
+
+ /**** RECOMMANDATIONS ********/
+
+ #recommandations {
+     position: relative;
+     height: 500px;
+     background: rgb(242,239,233);
+     background: linear-gradient(180deg, rgba(242,239,233,0) 0%, rgba(249,248,245,0.8) 22%, rgba(255,255,255,0.75) 50%, rgba(247,245,241,0.8) 82%, rgba(242,239,233,0) 100%);  
+
+ }
+.carousel-indicators {
+    bottom: -50px;
+}
+
+
+/**** FOOTER ********/
+ footer {
+     background: #711532;
+     height: 50px;
+     color: white;
+     vertical-align: center;
+ }
